@@ -1,0 +1,4 @@
+platform :ios, '7.0'
+
+pod 'ReactiveCocoa',  :inhibit_warnings => true
+pod 'Mantle',         :inhibit_warnings => true
