@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  JGOObservingViewController.h
 //  MVVM
 //
 //  Created by Jan Gorman on 2014-01-19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property(strong, nonatomic) UIWindow *window;
+@interface JGOObservingViewController : UIViewController
 
 @end

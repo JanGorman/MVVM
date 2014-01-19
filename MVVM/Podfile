@@ -1,4 +1,13 @@
 platform :ios, '7.0'
+inhibit_all_warnings!
 
-pod 'ReactiveCocoa',  :inhibit_warnings => true
-pod 'Mantle',         :inhibit_warnings => true
+target 'MVVM' do
+  pod 'ReactiveCocoa', '2.2'
+  pod 'Mantle', '1.3.1'
+  pod 'SVPullToRefresh', '0.4.1'
+end
+
+target 'MVVMTests' do
+  pod 'OCMock', '2.2.1'
+end
+

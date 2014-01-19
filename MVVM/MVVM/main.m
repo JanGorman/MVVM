@@ -2,7 +2,7 @@
 //  main.m
 //  MVVM
 //
-//  Created by Sir Jan Gorman on 17.01.14.
+//  Created by Jan Gorman on 19.01.14.
 //  Copyright (c) 2014 Jan Gorman. All rights reserved.
 //
 

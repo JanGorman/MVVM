@@ -19,3 +19,22 @@ DerivedData
 
 #CocoaPods
 Pods
+
+#Node
+lib-cov
+lcov.info
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+build
+.grunt
+
+node_modules
