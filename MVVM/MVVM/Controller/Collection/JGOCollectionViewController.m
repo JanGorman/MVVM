@@ -6,30 +6,53 @@
 //  Copyright (c) 2014 Jan Gorman. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa/RACSignal.h>
 #import "JGOCollectionViewController.h"
+#import "JGOCollectionViewCell.h"
+#import "JGOCollectionViewModel.h"
+#import "RACSignal+Operations.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface JGOCollectionViewController ()
+
+@property(strong, nonatomic) JGOCollectionViewModel *viewModel;
 
 @end
 
 @implementation JGOCollectionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+#pragma mark Lifecycle
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
     if (self) {
-        // Custom initialization
+        _viewModel = [[JGOCollectionViewModel alloc] init];
+
+        [[RACSignal merge:@[[_viewModel fetchCollection]]] subscribeCompleted:^{
+            [self.collectionView reloadData];
+        }];
     }
+
     return self;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [self.viewModel numberOfItems];
 }
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    JGOCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([JGOCollectionViewCell class])
+                                                                            forIndexPath:indexPath];
+    cell.imageView.imageWithURL = [self.viewModel imageURLAtIndexPath:indexPath];
+    cell.label.text = [self.viewModel labelAtIndexPath:indexPath];
+
+    return cell;
+}
+
 
 @end

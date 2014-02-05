@@ -1,58 +1,60 @@
-[
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Foo",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  },
-  {
-    "label" : "Bar",
-    "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-  }
-]
+{
+  "items": [
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Foo",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    },
+    {
+      "label" : "Bar",
+      "imageURL" : "http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
+    }
+  ]
+}

@@ -11,6 +11,7 @@
 		31AA34765C41457ED5C16111 /* JGOCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA343E76BB0656FFA22DD4 /* JGOCollectionViewModel.m */; };
 		31AA368D2DCD604FE4713A5B /* JGOCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA3D30A475FD856C07D0A2 /* JGOCollectionModel.m */; };
 		31AA393FEEC30367A6523BB5 /* JGOCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA368C7E7FD15CD416E131 /* JGOCollectionViewController.m */; };
+		31AA3BF9ACAA050E1CCD551A /* JGOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA3E19925B2EA48C99D4E4 /* JGOClient.m */; };
 		31AA3CB647C6FC046C25067C /* JGOObservingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA394398E510FF86EDBC5E /* JGOObservingViewController.m */; };
 		470866D7B4A14360971753DF /* libPods-MVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88843C13F29749FB9B65549B /* libPods-MVVMTests.a */; };
 		F22909425261483FB14FE54A /* libPods-MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3B0F8F7C2A4C04940536C7 /* libPods-MVVM.a */; };
@@ -26,7 +27,8 @@
 		F2AF7EE9188BF3A200035A87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF7EC8188BF3A200035A87 /* Foundation.framework */; };
 		F2AF7EEA188BF3A200035A87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF7ECC188BF3A200035A87 /* UIKit.framework */; };
 		F2AF7EF2188BF3A200035A87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2AF7EF0188BF3A200035A87 /* InfoPlist.strings */; };
-		F2AF7EF4188BF3A200035A87 /* MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7EF3188BF3A200035A87 /* MVVMTests.m */; };
+		F2AF7F08188C171A00035A87 /* JGOCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7F07188C171A00035A87 /* JGOCollectionViewCell.m */; };
+		F2AF7F0A188C1CCF00035A87 /* JGOCollectionViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AF7F09188C1CCF00035A87 /* JGOCollectionViewModelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		07C3D794A4064B5B95133E4F /* Pods-MVVMTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.xcconfig"; path = "Pods/Pods-MVVMTests.xcconfig"; sourceTree = "<group>"; };
 		1719B818CCCC442F99EB3E5F /* Pods-MVVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.xcconfig"; path = "Pods/Pods-MVVM.xcconfig"; sourceTree = "<group>"; };
 		31AA30B5756FA74AC107BE08 /* JGOObservingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOObservingViewController.h; sourceTree = "<group>"; };
+		31AA330050D5F1EDD6F2500E /* JGOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOClient.h; sourceTree = "<group>"; };
 		31AA33209C7C98818CD86975 /* JGOCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOCollectionViewModel.h; sourceTree = "<group>"; };
 		31AA343E76BB0656FFA22DD4 /* JGOCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOCollectionViewModel.m; sourceTree = "<group>"; };
 		31AA3480559C610384158655 /* JGOInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOInputViewController.m; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		31AA3C57C35EE77CB4677A56 /* JGOInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOInputViewController.h; sourceTree = "<group>"; };
 		31AA3D30A475FD856C07D0A2 /* JGOCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOCollectionModel.m; sourceTree = "<group>"; };
 		31AA3DB6315B51120DED73A4 /* JGOCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOCollectionModel.h; sourceTree = "<group>"; };
+		31AA3E19925B2EA48C99D4E4 /* JGOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOClient.m; sourceTree = "<group>"; };
 		88843C13F29749FB9B65549B /* libPods-MVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3B0F8F7C2A4C04940536C7 /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AF7EC5188BF3A200035A87 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +74,9 @@
 		F2AF7EE7188BF3A200035A87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F2AF7EEF188BF3A200035A87 /* MVVMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVVMTests-Info.plist"; sourceTree = "<group>"; };
 		F2AF7EF1188BF3A200035A87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F2AF7EF3188BF3A200035A87 /* MVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTests.m; sourceTree = "<group>"; };
+		F2AF7F06188C171A00035A87 /* JGOCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGOCollectionViewCell.h; sourceTree = "<group>"; };
+		F2AF7F07188C171A00035A87 /* JGOCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOCollectionViewCell.m; sourceTree = "<group>"; };
+		F2AF7F09188C1CCF00035A87 /* JGOCollectionViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGOCollectionViewModelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 		31AA344B061FC1412ECFF184 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				31AA3E19925B2EA48C99D4E4 /* JGOClient.m */,
+				31AA330050D5F1EDD6F2500E /* JGOClient.h */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 				31AA368C7E7FD15CD416E131 /* JGOCollectionViewController.m */,
 				31AA343E76BB0656FFA22DD4 /* JGOCollectionViewModel.m */,
 				31AA33209C7C98818CD86975 /* JGOCollectionViewModel.h */,
+				F2AF7F06188C171A00035A87 /* JGOCollectionViewCell.h */,
+				F2AF7F07188C171A00035A87 /* JGOCollectionViewCell.m */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -225,8 +235,8 @@
 		F2AF7EED188BF3A200035A87 /* MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2AF7EF3188BF3A200035A87 /* MVVMTests.m */,
 				F2AF7EEE188BF3A200035A87 /* Supporting Files */,
+				F2AF7F09188C1CCF00035A87 /* JGOCollectionViewModelTests.m */,
 			);
 			path = MVVMTests;
 			sourceTree = "<group>";
@@ -410,7 +420,9 @@
 				31AA393FEEC30367A6523BB5 /* JGOCollectionViewController.m in Sources */,
 				31AA31997D6E1A97904CF9AD /* JGOInputViewController.m in Sources */,
 				31AA3CB647C6FC046C25067C /* JGOObservingViewController.m in Sources */,
+				F2AF7F08188C171A00035A87 /* JGOCollectionViewCell.m in Sources */,
 				31AA34765C41457ED5C16111 /* JGOCollectionViewModel.m in Sources */,
+				31AA3BF9ACAA050E1CCD551A /* JGOClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2AF7EF4188BF3A200035A87 /* MVVMTests.m in Sources */,
+				F2AF7F0A188C1CCF00035A87 /* JGOCollectionViewModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +555,7 @@
 				GCC_PREFIX_HEADER = "MVVM/MVVM-Prefix.pch";
 				INFOPLIST_FILE = "MVVM/MVVM-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -558,7 +570,7 @@
 				GCC_PREFIX_HEADER = "MVVM/MVVM-Prefix.pch";
 				INFOPLIST_FILE = "MVVM/MVVM-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
