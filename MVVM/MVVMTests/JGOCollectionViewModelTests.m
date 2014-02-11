@@ -19,12 +19,19 @@
 
 @interface JGOCollectionViewModelTests : XCTestCase
 
+@property(strong, nonatomic) NSData *JSONData;
+
 @end
 
 @implementation JGOCollectionViewModelTests
 
 - (void)setUp {
     [super setUp];
+
+    NSString *JSON = @"{\"items\":["
+            "{\"label\": \"Foo\",\"imageURL\": \"http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg\"}"
+            "]}";
+    self.JSONData = [JSON dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void)tearDown {
@@ -37,18 +44,14 @@
 
     JGOCollectionViewModel *viewModel = [[JGOCollectionViewModel alloc] initWithClient:mock];
 
-    NSDictionary *dictionary = @{
-            @"label" : @"Foo",
-            @"imageURL" : @"http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg"
-    };
-
-    JGOCollectionModel *model = [MTLJSONAdapter modelOfClass:[JGOCollectionModel class]
-                                          fromJSONDictionary:dictionary
-                                                       error:nil];
-
     RACSignal *racSignal = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        id value = [NSJSONSerialization JSONObjectWithData:self.JSONData
+                                                   options:NSJSONReadingAllowFragments
+                                                     error:nil];
+        NSLog(@"value %@", value);
 
-        [subscriber sendNext:@{@"items" : @[model]}];
+        [subscriber sendNext:value];
+        [subscriber sendCompleted];
 
         return [RACDisposable disposableWithBlock:^{
 
@@ -57,10 +60,12 @@
     [[[mock stub] andReturn:racSignal] fetchJSONFromURL:[OCMArg any]];
 
     [[RACSignal merge:@[[viewModel fetchCollection]]] subscribeCompleted:^{
-        NSLog(@"Done");
     }];
 
-    XCTAssert([viewModel numberOfItems] > 0);
+    XCTAssert([viewModel numberOfItems] == 1);
+
+    NSString *label = [viewModel labelAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertEqualObjects(@"Foo", label);
 }
 
 @end

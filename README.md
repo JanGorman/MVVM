@@ -27,7 +27,6 @@ And that's that.
 
 ## TODO
 
-* Well, the actual point of switching to MVVM was to improve the testability of the code… and that hasn't quite worked out yet as I wanted. As time permits I'll go back in and fix those.
 * Setup the other views. The collection view is the only functional one right now.
 
 
