@@ -29,7 +29,10 @@
     [super setUp];
 
     NSString *JSON = @"{\"items\":["
-            "{\"label\": \"Foo\",\"imageURL\": \"http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg\"}"
+            "{"
+            "\"label\": \"Foo\","
+            "\"imageURL\": \"http://cdn.shopify.com/s/files/1/0259/0031/products/Karo_Rigaud-Linocut_Maille_1024x1024.jpg\""
+            "}"
             "]}";
     self.JSONData = [JSON dataUsingEncoding:NSUTF8StringEncoding];
 }
@@ -48,13 +51,10 @@
         id value = [NSJSONSerialization JSONObjectWithData:self.JSONData
                                                    options:NSJSONReadingAllowFragments
                                                      error:nil];
-        NSLog(@"value %@", value);
-
         [subscriber sendNext:value];
         [subscriber sendCompleted];
 
         return [RACDisposable disposableWithBlock:^{
-
         }];
     }];
     [[[mock stub] andReturn:racSignal] fetchJSONFromURL:[OCMArg any]];
